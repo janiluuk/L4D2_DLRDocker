@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  web:
+    image: itzg/rcon
+    environment:
+      RWA_USERNAME: admin
+      RWA_PASSWORD: 4dm1n
+      RWA_ADMIN: "TRUE"
+      RWA_RCON_PORT: 27015
+      # is referring to the hostname of 'mc' compose service below
+      RWA_RCON_HOST: l4d2
+      RWA_RCON_PASSWORD: "annikkikyllikki"
+    ports:
+      - 4326:4326
+      - 4327:4327
+  l4d2:
+    image: left4devops/l4d2
+    restart: always
+    environment:
+      SV_HOSTNAME: "DLR Carnage"
+      SV_RCON_PASSWORD: "annikkikyllikki"
+    ports:
+      - 27015:27015
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: dlr_root
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8000:8000
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:8080"
+    volumes:
+            - './php-files:/var/www/html'
+            - './nginx-conf:/etc/nginx/conf.d'
+  # MariaDB Service
+  mariadb:
+    image: mariadb:10.9
+    environment:
+      MYSQL_ROOT_PASSWORD: your_password
+    volumes:
+      - mysqldata:/var/lib/mysql
+    networks:
+      - internal
+  # Volumes
+volumes:
+  mysqldata:
+  php-files:
+  nginx-conf:
+
+networks:
+  internal:
+    driver: bridge
+
