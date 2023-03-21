@@ -1,0 +1,443 @@
+; *******************************************************************************************
+; now for my tower in the cheese spot!
+; *******************************************************************************************
+; assembled with 47 props
+
+; i highly suggest to use it with my "Infected Ghost Leap" Plugin, so Infected can spawn ontop of it
+
+add:
+
+{
+	; framing, lower
+	"solid" "6"
+	"origin" "-3819 2850 0"
+	"angles" "0 0 0"
+	"model" "models/props_highway/scaffolding_320.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; framing end, lower
+	"solid" "6"
+	"origin" "-3819 3163 0"
+	"angles" "0 0 0"
+	"model" "models/props_highway/scaffolding_end.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; framing, middle
+	"solid" "6"
+	"origin" "-3819 2850 105"
+	"angles" "0 0 0"
+	"model" "models/props_highway/scaffolding_320.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; framing end, middle
+	"solid" "6"
+	"origin" "-3819 3163 105"
+	"angles" "0 0 0"
+	"model" "models/props_highway/scaffolding_end.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; framing, upper
+	"solid" "6"
+	"origin" "-3819 2850 210"
+	"angles" "0 0 0"
+	"model" "models/props_highway/scaffolding_320.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; framing end, upper
+	"solid" "6"
+	"origin" "-3819 3163 210"
+	"angles" "0 0 0"
+	"model" "models/props_highway/scaffolding_end.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; marquise framing
+	"solid" "6"
+	"origin" "-3820 3163 310"
+	"angles" "0 180 0"
+	"model" "models/props_highway/scaffolding_cantilever.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; marquise framing end
+	"solid" "6"
+	"origin" "-3820 2865 310"
+	"angles" "0 180 0"
+	"model" "models/props_highway/scaffolding_cantilever_end.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; marquise connector
+	"solid" "6"
+	"origin" "-3816 2852 205"
+	"angles" "0 0 0"
+	"model" "models/props_highway/scaffolding_320_railing.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; towards mapend, low woodplates
+	"solid" "6"
+	"origin" "-3867 3161 84"
+	"angles" "90 90 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; towards mapend, low woodplates
+	"solid" "6"
+	"origin" "-3817 3161 84"
+	"angles" "90 90 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; towards mapend, high woodplates
+	"solid" "6"
+	"origin" "-3867 3161 210"
+	"angles" "90 90 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; towards mapend, high woodplates
+	"solid" "6"
+	"origin" "-3817 3161 210"
+	"angles" "90 90 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; towards innermap, low woodplates
+	"solid" "6"
+	"origin" "-3867 2859 84"
+	"angles" "90 90 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; towards innermap, low woodplates
+	"solid" "6"
+	"origin" "-3817 2859 84"
+	"angles" "90 90 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; towards innermap, high woodplates
+	"solid" "6"
+	"origin" "-3867 2859 210"
+	"angles" "90 90 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; towards innermap, high woodplates
+	"solid" "6"
+	"origin" "-3817 2859 210"
+	"angles" "90 90 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; top
+	"solid" "6"
+	"origin" "-3821 3104 311"
+	"angles" "0 0 0"
+	"model" "models/props_highway/plywood_02.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; top
+	"solid" "6"
+	"origin" "-3726 3104 305"
+	"angles" "0 -6 0"
+	"model" "models/props_highway/plywood_02.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; top
+	"solid" "6"
+	"origin" "-3821 3024 311"
+	"angles" "0 3 0"
+	"model" "models/props_highway/plywood_02.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; top
+	"solid" "6"
+	"origin" "-3726 3024 305"
+	"angles" "0 0 0"
+	"model" "models/props_highway/plywood_02.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; top
+	"solid" "6"
+	"origin" "-3821 2974 311"
+	"angles" "0 0 0"
+	"model" "models/props_highway/plywood_02.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; top
+	"solid" "6"
+	"origin" "-3726 2974 305"
+	"angles" "0 6 0"
+	"model" "models/props_highway/plywood_02.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; top
+	"solid" "6"
+	"origin" "-3821 2924 311"
+	"angles" "0 0 0"
+	"model" "models/props_highway/plywood_02.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; top
+	"solid" "6"
+	"origin" "-3726 2924 305"
+	"angles" "0 4 0"
+	"model" "models/props_highway/plywood_02.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; top
+	"solid" "6"
+	"origin" "-3821 2866 311"
+	"angles" "0 2 0"
+	"model" "models/props_highway/plywood_02.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; top
+	"solid" "6"
+	"origin" "-3726 2866 305"
+	"angles" "0 0 0"
+	"model" "models/props_highway/plywood_02.mdl"
+	"classname" "prop_dynamic"
+}
+
+; ================ PLATING LOWER ROW ================
+
+{
+	; backside - towards mapend
+	"solid" "6"
+	"origin" "-3914 3105 95"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; backside - towards mapend
+	"solid" "6"
+	"origin" "-3914 3025 95"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; backside - towards mapend
+	"solid" "6"
+	"origin" "-3914 2975 95"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; backside - towards mapend
+	"solid" "6"
+	"origin" "-3914 2925 95"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; backside - towards mapend
+	"solid" "6"
+	"origin" "-3914 2867 95"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+; ================ PLATING UPPER ROW ================
+
+{
+	; backside - towards mapend
+	"solid" "6"
+	"origin" "-3914 3105 221"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; backside - towards mapend
+	"solid" "6"
+	"origin" "-3914 3025 221"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; backside - towards mapend
+	"solid" "6"
+	"origin" "-3914 2975 221"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; backside - towards mapend
+	"solid" "6"
+	"origin" "-3914 2925 221"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; backside - towards mapend
+	"solid" "6"
+	"origin" "-3914 2867 221"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+; ================ PLATING LOWER ROW ================
+
+{
+	; frontside - toward stage
+	"solid" "6"
+	"origin" "-3824 3105 55"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; frontside - toward stage
+	"solid" "6"
+	"origin" "-3824 3025 55"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; frontside - toward stage
+	"solid" "6"
+	"origin" "-3824 2975 55"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; frontside - toward stage
+	"solid" "6"
+	"origin" "-3824 2925 55"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; frontside - toward stage
+	"solid" "6"
+	"origin" "-3824 2867 55"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+; ================ PLATING UPPER ROW ================
+
+{
+	; frontside - toward stage
+	"solid" "6"
+	"origin" "-3824 3105 181"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; frontside - toward stage
+	"solid" "6"
+	"origin" "-3824 3025 181"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; frontside - toward stage
+	"solid" "6"
+	"origin" "-3824 2975 181"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; frontside - toward stage
+	"solid" "6"
+	"origin" "-3824 2925 181"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+{
+	; frontside - toward stage
+	"solid" "6"
+	"origin" "-3824 2867 181"
+	"angles" "90 0 0"
+	"model" "models/props_highway/plywood_03.mdl"
+	"classname" "prop_dynamic"
+}
+
+; *******************************************************************************************
+; TOWER END
+; ***********************************************************************

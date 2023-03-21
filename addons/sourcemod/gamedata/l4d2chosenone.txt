@@ -1,0 +1,33 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Signatures"
+		{
+			/*
+			 * CTerrorPlayer::Fling(Vector  const&,PlayerAnimEvent_t,CBaseCombatCharacter *,float)
+			 *
+			 *	Vector: how target is supposed to fly, Animevent is "76" for chargerbounce, CBasePlayer is attacker, float is Incap Animation time
+			 *
+			 */
+			"CTerrorPlayer_Fling"
+			{
+				"library"	"server"
+				"linux"	"@_ZN13CTerrorPlayer5FlingERK6Vector17PlayerAnimEvent_tP20CBaseCombatCharacterf"
+				"windows" "\x81\xEC\x2A\x2A\x2A\x2A\x55\x57\x8B\xE9\x33\xFF\x57\x89\x2A\x2A\x2A\xE8"
+				/* 81 EC ? ? ? ? 55 57 8B E9 33 FF 57 89 ? ? ? E8 */
+			}
+			
+			/*
+			 *  CTerrorPlayer::OnHitByVomitJar(CBaseCombatCharacter *)
+			 */
+			"CTerrorPlayer_OnHitByVomitJar"
+			{
+				"library"	"server"
+				"linux"	"@_ZN13CTerrorPlayer15OnHitByVomitJarEP20CBaseCombatCharacter"
+				"windows" "\x83\xEC\x2A\x56\x8B\xF1\xE8\x2A\x2A\x2A\x2A\x84\xC0\x74\x2A\x8B\x06\x8B\x90\x2A\x2A\x2A\x2A\x8B\xCE\xFF\xD2\x84\xC0\x0F"
+				/* 83 EC ? 56 8B F1 E8 ? ? ? ? 84 C0 74 ? 8B 06 8B 90 ? ? ? ? 8B CE FF D2 84 C0 0F */
+			}
+		}
+	}
+}

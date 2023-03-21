@@ -10,32 +10,32 @@ services:
       RWA_RCON_PORT: 27015
       # is referring to the hostname of 'mc' compose service below
       RWA_RCON_HOST: l4d2
-      RWA_RCON_PASSWORD: "annikkikyllikki"
+      RWA_RCON_PASSWORD: funnybunnymoney
     ports:
       - 4326:4326
-      - 4327:4327
+      - 4327:4327    
   l4d2:
     image: left4devops/l4d2
     restart: always
     environment:
-      SV_HOSTNAME: "DLR Carnage"
-      SV_RCON_PASSWORD: "annikkikyllikki"
+      SV_HOSTNAME: "Left4DevOps" 
+      SV_RCON_PASSWORD: "snnikkikyllikki"
     ports:
       - 27015:27015
   db:
     image: mariadb
     restart: always
     environment:
-      MARIADB_ROOT_PASSWORD: dlr_root
+      MARIADB_ROOT_PASSWORD: example
   adminer:
     image: adminer
     restart: always
     ports:
-      - 8000:8000
+      - 8000:8000   
   nginx:
     image: nginx:alpine
-    ports:
-      - "8080:8080"
+    ports:  
+      - "8080:80"
     volumes:
             - './php-files:/var/www/html'
             - './nginx-conf:/etc/nginx/conf.d'
@@ -57,4 +57,5 @@ volumes:
 networks:
   internal:
     driver: bridge
+
 

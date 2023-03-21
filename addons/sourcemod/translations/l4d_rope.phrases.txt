@@ -1,0 +1,73 @@
+"Phrases"
+{
+	"Grabbed"
+	{
+		"#format"	"{1:N}"
+		"en"		"Hooked {1}"		
+		"zho"		"抓住了 {1}"
+		"chi"		"抓住了 {1}"
+	}
+	"Denied" 
+	{
+		"en"		"Permision Denied"		
+	}
+	"Switched" 
+	{
+		"#format"	"{1:t}"
+		"en"		"Switched to {1} Mode"
+		"chi"		"切换到 {1} 模式"
+		"zho"		"切换到 {1} 模式"
+	}
+	"Dropped" 
+	{
+		"#format"	"{1:t}"
+		"en"		"{1} Dropped"
+		"chi"		"{1} 掉了下来"
+		"zho"		"{1} 掉了下来"
+	}
+	"Hook" 
+	{
+		"en"		"Hook"
+		"chi"		"钩爪"
+		"zho"		"钩爪"
+	}
+	"Rope" 
+	{
+		"en"		"Rope"
+		"chi"		"绳子"
+		"zho"		"绳子"
+	}
+	"Not Allowed" 
+	{
+		"en"		"Ropes Infected Not Allowed"
+		"chi"		"绳子不被允许在感染者"
+		"zho"		"绳子不被允许在感染者"
+	}
+	"Far"
+	{
+		"#format"	"{1:t}"
+		"en"		"{1} Too Far"
+		"chi"		"{1}太远啦"
+		"zho"		"{1}太远啦"
+	}
+	"Usage Rope" 
+	{
+		"en"		"You Pickup a Rope, zoom key to shoot it\nctrl or shift adjust when on air"
+		"chi"		"你捡起了一条绳子\n在空中使用瞄准键射出\nCtrl或Shift键微调"
+		"zho"		"你捡起了一条绳子\n在空中使用瞄准键射出\nCtrl或Shift键微调"
+	}
+	"Usage Hook" 
+	{
+		"en"		"You Pickup a Hook, shove to shoot it when on air\nctrl key to adjust"
+		"chi"		"你捡起了一条钩爪\n在空中使用右键射出\nCtrl键以微调"
+		"zho"		"你捡起了一条钩爪\n在空中使用右键射出\nCtrl键以微调"
+	}
+	"Pickup Announce" 
+	{
+		"#format"	"{1:t}"
+		"en"		"Pickup {1}"
+		"chi"		"捡起了一条 {1}"
+		"zho"		"捡起了一条 {1}"
+	}
+}
+

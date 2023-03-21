@@ -1,0 +1,28 @@
+﻿"Phrases"
+{
+	"New Tank Spawning"
+	{
+		"en"			"New Tank Spawning"
+	}
+
+	"Bot"
+	{
+		"en"			"Bot"
+	}
+
+	"loose tank control"
+	{
+		"en"			"loose tank control"
+	}
+
+	"loose first tank control"
+	{
+		"en"			"loose first tank control"
+	}
+
+	"loose tank control and control going to bot"
+	{
+		"en"			"loose tank control and control going to bot"
+	}
+
+}

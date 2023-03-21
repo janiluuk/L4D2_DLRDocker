@@ -1,0 +1,23 @@
+// {white}
+// {cyan}
+// {orange}
+// {green}
+
+"Phrases"
+{
+	"GetOffInfected"
+	{
+		"en"		"{orange}Get that Infected off you first"
+		"ru"		"{orange}Сперва снимите заражённого с себя"
+	}
+	"AlreadyReviving"
+	{
+		"en"		"{orange}You're being revived already"
+		"ru"		"{orange}Вас уже поднимают"
+	}
+	"Hint_About_Release"
+	{
+		"en"		"{green}Press {orange}Space (JUMP){green} to release from the ledge"
+		"ru"		"{green}Нажми {orange}Пробел (ПРЫЖОК){green}, чтобы спрыгнуть с уступа"
+	}
+}

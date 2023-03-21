@@ -1,0 +1,7 @@
+"Phrases"
+{
+	"Crawl"
+	{
+		"zho"		"按 W鍵 爬行"
+	}
+}

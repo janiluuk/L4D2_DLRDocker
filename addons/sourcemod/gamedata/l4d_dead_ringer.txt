@@ -1,0 +1,48 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Signatures"
+		{
+			// Below 3 signatures were taken from https://forums.alliedmods.net/showthread.php?t=109715
+			// Except OnPummelEnded's windows signature. I had to get a fresh new one.
+			"CTerrorPlayer::OnPummelEnded"
+			{
+				"library"	"server"
+				"linux"	"@_ZN13CTerrorPlayer13OnPummelEndedEbPS_"
+				"windows"	"\x55\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x53\x56\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x57"
+				"mac"		"@_ZN13CTerrorPlayer13OnPummelEndedEbPS_"
+			}
+			"CTerrorPlayer::OnPounceEnd"
+			{
+				"library"	"server"
+				"linux"	"@_ZN13CTerrorPlayer13OnPounceEndedEv"
+				"windows"	"\x55\x8B\xEC\x51\x53\x8B\xD9\x80\xBB\xAC\x3E\x00\x00\x00"
+				"mac"		"@_ZN13CTerrorPlayer13OnPounceEndedEv"
+				/* 55 8B EC 51 53 8B D9 80 BB AC 3E 00 00 00  */
+			}
+			"CBaseAbility::StartActivationTimer"
+			{
+				"library"	"server"
+				"linux"	"@_ZN12CBaseAbility20StartActivationTimerEff"
+				"windows"	"\x55\x8B\xEC\xF3\x0F\x10\x4D\x0C\x0F\x57\xC0"
+				"mac"		"@_ZN12CBaseAbility20StartActivationTimerEff"
+				/* 55 8B EC F3 0F 10 4D 0C 0F 57 C0  */
+			}
+			"CTerrorPlayer::ReleaseTongueVictim"
+			{
+				"library"	"server"
+				"linux"	"@_ZN13CTerrorPlayer19ReleaseTongueVictimEb"
+				"windows"	"\x53\x8B\x2A\x83\x2A\x2A\x83\x2A\x2A\x83\x2A\x2A\x55\x8B\x2A\x2A\x89\x2A\x2A\x2A\x8B\x2A\x83\x2A\x2A\x8B\x81\x2A\x2A\x2A\x2A"
+				"mac"		"@_ZN13CTerrorPlayer19ReleaseTongueVictimEb"
+			}
+			"CTerrorPlayer::OnRideEnded"
+			{
+				"library"	"server"
+				"linux"	"@_ZN13CTerrorPlayer11OnRideEndedEPS_"
+				"windows"	"\x55\x8B\x2A\x83\x2A\x2A\x53\x56\x57\x68\x14\x2A\x2A\x2A"
+				"mac"		"@_ZN13CTerrorPlayer11OnRideEndedEPS_"
+			}
+		}
+	}
+}

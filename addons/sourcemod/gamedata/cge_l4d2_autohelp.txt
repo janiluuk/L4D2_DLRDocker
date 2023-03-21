@@ -1,0 +1,23 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Signatures"
+		{
+			"CTerrorPlayer::OnPummelEnded"
+			{
+				"library"	"server"
+				"windows"    	"\x55\x8B\xEC\x8B\x15\x2A\x2A\x2A\x2A\x53\x56\x8B\xF1\x8B"
+				/* 55 8B EC 8B 15 ? ? ? ? 53 56 8B F1 8B */
+				"linux"		"@_ZN13CTerrorPlayer13OnPummelEndedEbPS_"
+			}
+			"CTerrorPlayer::OnPounceEnd"
+			{
+				"library"	"server"
+				"windows"    	"\x55\x8B\xEC\x51\x53\x8B\xD9\x80\xBB"
+				/* 55 8B EC 51 53 8B D9 80 BB */
+				"linux"		"@_ZN13CTerrorPlayer13OnPounceEndedEv"
+			}
+		}
+	}
+}

@@ -1,0 +1,211 @@
+﻿"Phrases"
+{
+	//""Normal \x01 
+	//""Verde \x03 
+	//""Amarelo \x04 
+	//""Verde \x05
+	
+	"WhatDoYouWant"
+	{
+		"en"		"What do you want?"
+		"pt"		"O que você deseja?"
+	}
+	
+	"ChooseKeyMan"
+	{
+		"en"		"Choose KeyMan"
+		"pt"		"Escolher Homem-Chave"
+	}
+	
+	"SelectAPlayer"
+	{
+		"en"		"Select a Player"
+		"pt"		"Selecione o Jogador"
+	}
+	
+	"Random"
+	{
+		"en"		"Random"
+		"pt"		"Aleatório"
+	}
+	
+	"Refresh"
+	{
+		"en"		"Refresh"
+		"pt"		"Atualizar"
+	}
+	
+	"Current"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} (Current)"
+		"pt"		"{1} (Atual)"
+	}
+	
+	"JoinTeam"
+	{
+		"en"		"The KeyMan has changed his team! Reseting KeyMan..."
+		"pt"		"O Homem-Chave mudou de time! Redefinindo Homem-Chave..."
+	}
+	
+	"Dead"
+	{
+		"en"		"The KeyMan is dead! Reseting KeyMan..."
+		"pt"		"O Homem-Chave morreu! Redefinindo Homem-Chave..."
+	}
+	
+	"Disconnected"
+	{
+		"en"		"The KeyMan disconected! Reseting KeyMan..."
+		"pt"		"O Homem-Chave desconectou! Redefinindo Homem-Chave..."
+	}
+	
+	"Reset"
+	{
+		"en"		"Reseting KeyMan..."
+		"pt"		"Redefinindo Homem-Chave..."
+	}
+	
+	"Invalid"
+	{
+		"en"		"Invalid KeyMan! Reseting KeyMan..."
+		"pt"		"Homem-Chave inválido! Redefinindo Homem-Chave..."
+	}
+	
+	"Arrived"
+	{
+		"#format"	"{1:N}"
+		"en"		"The KeyMan {1} arrived in the Safe Room!"
+		"pt"		"O Homem-Chave {1} chegou na Sala Segura!"
+	}
+
+	"SettingFree"
+	{
+		"en"		"Setting Free KeyMan..."
+		"pt"		"Liberando Homem-Chave..."
+	}
+
+	"DenyWarning"
+	{
+		"#format"	"{1:N}"
+		"en"		"The KeyMan is {1}.\nThe only one that can open the Safe Room door!"
+		"pt"		"O Homem-Chave é {1}.\nApenas ele pode abrir a porta da Sala Segura!"
+	}
+	
+	"TankAlive"
+	{
+		"en"		"The Tank still alive, kill him your coward!"
+		"pt"		"O Tank ainda está vivo, mate-o seu covarde!"
+	}
+	
+	"BOTLeftSafeArea"
+	{
+		"#format"	"{1:N}"
+		"en"		"The BOT {1} left the Safe Area!"
+		"pt"		"O BOT {1} saiu da Área Segura!"
+	}
+	
+	"PlayerLeftSafeArea"
+	{
+		"#format"	"{1:N}"
+		"en"		"The player {1} left the Safe Area!"
+		"pt"		"O jogador {1} saiu da Área Segura!"
+	}
+	
+	"WelcomeOn"
+	{
+		"en"		"Anti-Runner System enabled.\n\nCAUTION: Only the KeyMan can open the Safe Room door."
+		"pt"		"Sistema de Anti-Runner ativado.\n\nATENÇÃO: Somente o Homem-Chave pode abrir a porta da Sala Segura."
+	}
+	
+	"WelcomeOff"
+	{
+		"en"		"Anti-Runner System disabled."
+		"pt"		"Sistema de Anti-Runner desativado."
+	}
+	
+	"PlayerNotAvailable"
+	{
+		"en"		"Player not available."
+		"pt"		"Jogador não disponível."
+	}
+	
+	"NoKeyMan"
+	{
+		"en"		"The KeyMan was not chosen."
+		"pt"		"O Homem-Chave ainda não foi escolhido."
+	}
+	
+	"NewKeyMan"
+	{
+		"#format"	"{1:N}"
+		"en"		"The new KeyMan was set to: {1}."
+		"pt"		"O Novo Homem-Chave foi definido para: {1}."
+	}
+
+	"SameKeyMan"
+	{
+		"#format"	"{1:N}"
+		"en"		"The KeyMan remains: {1}."
+		"pt"		"O Homem-Chave continua sendo: {1}."
+	}
+
+	"ChangeKeyMan"
+	{
+		"#format"	"{1:s},{2:N}"
+		"en"		"The new KeyMan was changed from: {1} to {2}."
+		"pt"		"O Novo Homem-Chave foi definido de: {1} para {2}."
+	}
+
+
+	"KeyManIs"
+	{
+		"#format"	"{1:N}"
+		"en"		"The KeyMan is {1}."
+		"pt"		"O Homem-Chave é {1}."
+	}
+
+	"AntiRunnerSystem"
+	{
+		"en"		"Anti-Runner System"
+		"pt"		"Sistema Anti-Runner"
+	}
+
+	"InGame"
+	{
+		"en"		"This command is to be used only in-game."
+		"pt"		"Esse comando deve ser utilizado no jogo."
+	}
+
+
+	"Usage"
+	{
+		"en"		"Usage: sm_key <player>"
+		"pt"		"Uso: sm_key <jogador>"
+	}
+
+	"PlayerNotFound"
+	{
+		"en"		"Player not found."
+		"pt"		"Jogador não encontrado."
+	}
+	
+	"ModeNotSupported"
+	{
+		"en"		"Mode not supported."
+		"pt"		"Modo não suportado."
+	}
+	
+	"Enable"
+	{
+		"en"		"Enable"
+		"pt"		"Ativar"
+	}
+	
+	"Disable"
+	{
+		"en"		"Disable"
+		"pt"		"Desativar"
+	}
+
+}

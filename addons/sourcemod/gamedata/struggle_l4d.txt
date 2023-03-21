@@ -1,0 +1,75 @@
+"Games"
+{
+	"left4dead"
+	{
+		"Signatures"
+        {
+            "CTerrorPlayer::OnShovedBySurvivor"
+            {
+                "library"    "server"
+                "linux"    "@_ZN13CTerrorPlayer18OnShovedBySurvivorEPS_RK6Vector"
+                "windows" "\x81\xEC\x2A\x2A\x2A\x2A\x56\x8B\xF1\xE8\x2A\x2A\x2A\x2A\x84\xC0\x0F\x2A\x2A\x2A\x2A\x2A\x8B\x8C\x2A\x2A\x2A\x2A\x2A\x85\xC9\x74"
+            }
+        }
+	}
+    "left4dead2"
+    {
+        "Signatures"
+        {
+            "CTerrorPlayer::OnShovedBySurvivor"
+            {
+                "library"   "server"
+                "linux"     "@_ZN13CTerrorPlayer18OnShovedBySurvivorEPS_RK6Vector"
+                "windows"   "\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x33\x2A\x89\x2A\x2A\x53\x8B\x2A\x2A\x56\x57\x8B\x2A\x2A\x8B\x2A\x89"
+                        /* ? ? ? ? ? ? ? ? ? A1 ? ? ? ? 33 ? 89 ? ? 53 8B ? ? 56 57 8B ? ? 8B ? 89 */
+            }
+			
+			"CBaseAbility::StartActivationTimer"
+            {
+                "library"   "server"
+                "linux"     "@_ZN12CBaseAbility20StartActivationTimerEff"
+                "windows"   "\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x0F\x2E\x2A\x2A\x2A\x2A\x2A\x9F\x56\x57\x8B"
+                        /* ? ? ? ? ? ? ? ? 0F 2E ? ? ? ? ? 9F 56 57 8B */
+            }
+			
+			"CTerrorPlayer::OnPummelEnded"
+            {
+                "library"   "server"
+                "linux"     "@_ZN13CTerrorPlayer13OnPummelEndedEbPS_"
+                "windows"   "\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x53\x56\x8B\x2A\x8B\x86\x2A\x2A\x2A\x2A\x57\x83\x2A\x2A\x0F"
+                        /* ? ? ? ? ? ? ? ? ? 53 56 8B ? 8B 86 ? ? ? ? 57 83 ? ? 0F */
+            }
+			
+			"CTerrorPlayer::OnPounceEnded"
+            {
+                "library"   "server"
+                "linux"     "@_ZN13CTerrorPlayer13OnPounceEndedEv"
+                "windows"   "\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x80\xBB\x2A\x2A\x2A\x2A\x2A\x56\x74"
+                        /* ? ? ? ? ? ? ? 80 BB ? ? ? ? ? 56 74 */
+            }         /* ? ? ? ? ? ? ? 80 BB ? ? ? ? ? 56 74 */
+            
+            "CTerrorPlayer::OnStaggered"
+            {
+                "library"   "server"
+                "linux"     "@_ZN13CTerrorPlayer11OnStaggeredEP11CBaseEntityPK6Vector"
+                "windows"   "\x2A\x2A\x2A\x2A\x2A\x2A\x83\x2A\x2A\x83\x2A\x2A\x55\x8B\x2A\x2A\x89\x2A\x2A\x2A\x8B\x2A\x83\x2A\x2A\x56\x57\x8B\x2A\xE8\x2A\x2A\x2A\x2A\x84\x2A\x0F\x85\x2A\x2A\x2A\x2A\x8B\x2A\x8B"
+                        /* ? ? ? ? ? ? 83 ? ? 83 ? ? 55 8B ? ? 89 ? ? ? 8B ? 83 ? ? 56 57 8B ? E8 ? ? ? ? 84 ? 0F 85 ? ? ? ? 8B ? 8B */
+            }
+			
+            "CTerrorPlayer::OnShovedBySurvivor"
+            {
+                "library"   "server"
+                "linux"     "@_ZN13CTerrorPlayer18OnShovedBySurvivorEPS_RK6Vector"
+                "windows"   "\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x33\x2A\x89\x2A\x2A\x53\x8B\x2A\x2A\x56\x57\x8B\x2A\x2A\x8B\x2A\x89"
+                        /* ? ? ? ? ? ? ? ? ? A1 ? ? ? ? 33 ? 89 ? ? 53 8B ? ? 56 57 8B ? ? 8B ? 89 */
+            }
+            "CTerrorPlayer::Fling"
+            {
+                "library"   "server"
+                "linux"     "@_ZN13CTerrorPlayer5FlingERK6Vector17PlayerAnimEvent_tP20CBaseCombatCharacterf"
+                "windows"   "\x2A\x2A\x2A\x2A\x2A\x2A\x83\x2A\x2A\x83\x2A\x2A\x55\x8B\x2A\x2A\x89\x2A\x2A\x2A\x8B\x2A\x81\xEC\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x33\x2A\x89\x2A\x2A\x8B\x2A\x2A\x56\x8B\x2A\x2A\x57\x6A"
+                        /* ? ? ? ? ? ? 83 ? ? 83 ? ? 55 8B ? ? 89 ? ? ? 8B ? 81 EC ? ? ? ? A1 ? ? ? ? 33 ? 89 ? ? 8B ? ? 56 8B ? ? 57 6A */
+            }
+        }
+    }
+}

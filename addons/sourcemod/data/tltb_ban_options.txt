@@ -1,0 +1,57 @@
+"TooLateToBan"
+{
+	"BanTime"
+	{
+		"Permanent"
+		{
+			"time"		"0"
+		}
+		"10 Minutes"
+		{
+			"time"		"10"
+		}
+		"30 Minutes"
+		{
+			"time"		"30"
+		}
+		"1 Hour"
+		{
+			"time"		"60"
+		}
+		"1 Day"
+		{
+			"time"		"1440"
+		}
+		"1 Week"
+		{
+			"time"		"10080"
+		}
+		"1 Month"
+		{
+			"time"		"302400"
+		}
+	}
+	"BanReason"
+	{
+		"Abusive"
+		{
+			"reason"		"Abusive"
+		}
+		"Lamer"
+		{
+			"reason"		"Lamer"
+		}
+		"Team killing"
+		{
+			"reason"		"Team Killing"
+		}
+		"Exploit"
+		{
+			"reason"		"Exploit"
+		}
+		"Cheat"
+		{
+			"reason"		"Cheat"
+		}
+	}
+}

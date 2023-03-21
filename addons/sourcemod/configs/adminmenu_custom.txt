@@ -1,0 +1,86 @@
+// Custom admin menu commands.
+// For more information:
+//
+// http://wiki.alliedmods.net/Custom_Admin_Menu_%28SourceMod%29
+//
+// Note: This file must be in Valve KeyValues format (no multiline comments)
+//
+
+"Commands"
+{
+	"Debug commands"
+	{	
+		"Slay all"
+		{
+			"cmd"		"sm_slayall"
+		}
+                "Halt survivors"
+                {
+                        "cmd"	        "sm_halt"
+                }
+		"Halt all"
+                {
+                        "cmd"           "sm_nb"
+                }
+
+	}
+	"Custom spawn"
+	{
+		"Create cabinet"
+		{
+			"cmd"		"sm_gun_cabinet"
+		}
+		"Delete cabinet"
+		{
+			"cmd"		"sm_gun_cabinet_del"
+		}
+		"Wipe out cabinets"
+		{
+			"cmd"		"sm_gun_cabinet_wipe"
+		}
+                "Reload all cabinets"
+                {
+                        "cmd"           "sm_gun_cabinet_reload"
+                }
+                "List cabinets"
+                {
+		        "cmd"           "sm_gun_cabinet_list"
+		}
+		"Delete weapon spawn"
+		{
+			"cmd"		"sm_weapon_spawn_del"
+		}
+		"Wipe out weapon spawns"
+		{
+			"cmd"		"sm_weapon_spawn_wipe"
+		}
+                "Create weapon spawn"
+                {
+                        "cmd"           "sm_weapon_spawn_save"
+                }
+                "List weapon spawns"
+                {
+                        "cmd"           "sm_weapon_spawn_list"
+                }
+		"Create incendiary spawn"
+		{
+			"cmd"		"sm_upgrade_spawn_save 1"
+		}
+		"Create explosive spawn"
+		{
+			"cmd"		"sm_upgrade_spawn_save 2"
+		}
+		"Delete upgrade spawn"
+		{
+			"cmd"		"sm_upgrade_spawn_del"
+		}
+		"Wipe out upgrade spawns"
+		{
+			"cmd"		"sm_upgrade_spawn_wipe"
+		}
+                "List upgrade spawns"
+                {
+                        "cmd"           "sm_upgrade_spawn_list"
+                }
+	}
+}

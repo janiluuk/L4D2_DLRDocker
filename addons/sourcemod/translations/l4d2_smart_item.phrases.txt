@@ -1,0 +1,214 @@
+//  = 0x01 (SOH) - Use normal color from this point forward
+//  = 0x02 (STX) - Use team color up to the end of the player name
+//  = 0x03 (ETX) - Use team color from this point forward
+//  = 0x04 (EOT) - Use location color from this point forward 
+//  = 0x05 (ENQ) - Use achievement color from this point forward
+
+"Phrases"
+{
+	"pipe_bomb"
+	{
+		"en"			"You received: Pipe Bomb!"
+		"ru"			"Вы получили: Пайпу!"
+	}
+	"molotov"
+	{
+		"en"			"You received: Molotov!"
+		"ru"			"Вы получили: Молотов!"
+	}
+	"vomitjar"
+	{
+		"en"			"You received: Vomit Jar!"
+		"ru"			"Вы получили: Рвоту толстяка!"
+	}
+	"pain_pills"
+	{
+		"en"			"You received: Pain Pills!"
+		"ru"			"Вы получили: Таблетки"
+	}
+	"adrenaline"
+	{
+		"en"			"You received: Adrenaline!"
+		"ru"			"Вы получили: Адреналин"
+	}
+	"first_aid_kit"
+	{
+		"en"			"You received: Medkit!"
+		"ru"			"Вы получили: Аптечку!"
+	}
+	"defibrillator"
+	{
+		"en"			"You received: Defibrilator!"
+		"ru"			"Вы получили: Дефибриллятор!"
+	}
+	"pumpshotgun"
+	{
+		"en"			"You received: Pump Shotgun!"
+		"ru"			"Вы получили: Помповое ружьё!"
+	}
+	"autoshotgun"
+	{
+		"en"			"You received: Auto Shotgun!"
+		"ru"			"Вы получили: Автоматическое ружьё!"
+	}
+	"shotgun_spas"
+	{
+		"en"			"You received: Shotgun Spas!"
+		"ru"			"Вы получили: Дробовик SPAS!"
+	}
+	"shotgun_chrome"
+	{
+		"en"			"You received: Chrome Shotgun!"
+		"ru"			"Вы получили: Хромированное ружьё!"
+	}
+	"smg"
+	{
+		"en"			"You received: SMG!"
+		"ru"			"Вы получили: Узи!"
+	}
+	"smg_mp5"
+	{
+		"en"			"You received: MP5 SMG!"
+		"ru"			"Вы получили: Автомат MP5!"
+	}
+	"smg_silenced"
+	{
+		"en"			"You received: Silenced SMG!"
+		"ru"			"Вы получили: ПП с глушителем!"
+	}
+	"rifle"
+	{
+		"en"			"You received: M16 Rifle!"
+		"ru"			"Вы получили: Винтовку М16!"
+	}
+	"rifle_ak47"
+	{
+		"en"			"You received: Ak47 Rifle!"
+		"ru"			"Вы получили: Автомат АК47!"
+	}
+	"rifle_desert"
+	{
+		"en"			"You received: Desert Rifle!"
+		"ru"			"Вы получили: Desert Rifle!"
+	}
+	"rifle_sg552"
+	{
+		"en"			"You received: Sg552 Rifle!"
+		"ru"			"Вы получили: Винтовку Sg552!"
+	}
+	"sniper_military"
+	{
+		"en"			"You received: Military Sniper!"
+		"ru"			"Вы получили: Военную снайперку!"
+	}
+	"sniper_awp"
+	{
+		"en"			"You received: AWP sniper!"
+		"ru"			"Вы получили: Снайперку AWP!"
+	}
+	"sniper_scout"
+	{
+		"en"			"You received: Scout Sniper!"
+		"ru"			"Вы получили: Снайперку разведчика!"
+	}
+	"hunting_rifle"
+	{
+		"en"			"You received: Hunting Rifle!"
+		"ru"			"Вы получили: Охотничью снайперку!"
+	}
+	"pistol"
+	{
+		"en"			"You received: Pistol!"
+		"ru"			"Вы получили: Пистолет!"
+	}
+	"pistol_magnum"
+	{
+		"en"			"You received: Magnum Pistol!"
+		"ru"			"Вы получили: Пистолет Магнум!"
+	}
+	"knife"
+	{
+		"en"			"You received: knife!"
+		"ru"			"Вы получили: Нож!"
+	}
+	"cricket_bat"
+	{
+		"en"			"You received: Cricket Bat!"
+		"ru"			"Вы получили: Биту для крикета!"
+	}
+	"baseball_bat"
+	{
+		"en"			"You received: Baseball Bat!"
+		"ru"			"Вы получили: Бейсбольную биту!"
+	}
+	"crowbar"
+	{
+		"en"			"You received: Crowbar!"
+		"ru"			"Вы получили: Лом!"
+	}
+	"electric_guitar"
+	{
+		"en"			"You received: Electric Guitar!"
+		"ru"			"Вы получили: Электрическую гитару!"
+	}
+	"fireaxe"
+	{
+		"en"			"You received: Fire Axe!"
+		"ru"			"Вы получили: Пожарный топор!"
+	}
+	"katana"
+	{
+		"en"			"You received: Katana!"
+		"ru"			"Вы получили: Катану!"
+	}
+	"machete"
+	{
+		"en"			"You received: Machete!"
+		"ru"			"Вы получили: Мачете!"
+	}
+	"tonfa"
+	{
+		"en"			"You received: Tonfa!"
+		"ru"			"Вы получили: Резиновую дубинку!"
+	}
+	"frying_pan"
+	{
+		"en"			"You received: Frying Pan!"
+		"ru"			"Вы получили: Сковороду!"
+	}
+	"golfclub"
+	{
+		"en"			"You received: Golf Cub!"
+		"ru"			"Вы получили: Клюшку для гольфа!"
+	}
+	"upgradepack_explosive"
+	{
+		"en"			"You received: Explosive Ammo Pack!"
+		"ru"			"Вы получили: Набор разрывных патронов!"
+	}
+	"upgradepack_incendiary"
+	{
+		"en"			"You received: Incendiary Aammo Pack!"
+		"ru"			"Вы получили: Набор зажигательных патронов!"
+	}
+	"LASER_SIGHT"
+	{
+		"en"			"You received upgrade: Laser Sight!"
+		"ru"			"Вы получили улучшение: Лазер!"
+	}
+	"EXPLOSIVE_AMMO"
+	{
+		"en"			"You received upgrade: Explosive Ammo!"
+		"ru"			"Вы получили улучшение: Разрывные патроны!"
+	}
+	"INCENDIARY_AMMO"
+	{
+		"en"			"You received upgrade: Incendiary Ammo!"
+		"ru"			"Вы получили улучшение: Зажигательные патроны!"
+	}
+	"knife_warning"
+	{
+		"en"			"Knife unlock not found! Replacing Knife with Crowbar!"
+		"ru"			"Knife unlock не найден! Заменяю Нож на Лом!"
+	}
+}
