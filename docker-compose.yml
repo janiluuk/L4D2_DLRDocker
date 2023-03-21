@@ -10,18 +10,24 @@ services:
       RWA_RCON_PORT: 27015
       # is referring to the hostname of 'mc' compose service below
       RWA_RCON_HOST: l4d2
-      RWA_RCON_PASSWORD: funnybunnymoney
+      RWA_RCON_PASSWORD: annikkikyllikki
+
     ports:
       - 4326:4326
-      - 4327:4327    
+      - 4327:4327
   l4d2:
     image: left4devops/l4d2
     restart: always
     environment:
-      SV_HOSTNAME: "Left4DevOps" 
-      SV_RCON_PASSWORD: "snnikkikyllikki"
+      SV_HOSTNAME: "Left4DevOps"
+      SV_RCON_PASSWORD: "annikkikyllikki"
     ports:
       - 27015:27015
+    volumes:
+       -  ${PWD}/l4d2/cfg/server.cfg:/home/louis/l4d2/left4dead2/cfg/server.cfg
+       -  ${PWD}/l4d2/cfg/autoexec.cfg:/home/louis/l4d2/left4dead2/cfg/autoexec.cfg
+       - './l4d2/addons:/home/louis/l4d2/left4dead2/addons'
+       - './l4d2/cfg/sourcemod:/home/louis/l4d2/left4dead2/cfg/sourcemod'
   db:
     image: mariadb
     restart: always
