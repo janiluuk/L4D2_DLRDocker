@@ -1,6 +1,5 @@
 # Left 4 Dead 2 - DLR Edition All-in-one Dockerized!
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/itzg/rcon)](https://hub.docker.com/r/itzg/rcon)
 
 This setup lets you run Left4Dead 2 server with pre-installed [DLR](https://github.com/janiluuk/L4D2_DLR) gamemode, [rcon](https://github.com/itzg/docker-rcon-web-admin/) Web console, Web panel with full statistics, Mysql server for storing statistics with [adminer](https://github.com/vrana/adminer) database tool. Feel free to add more servers in the compose file.
 
