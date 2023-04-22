@@ -374,7 +374,6 @@ if (!extension_loaded('mysql') && !function_exists('mysql_connect')) {
 	 * @return mixed
 	 */
 	error_reporting(0);
-	echo file_get_contents('https://www.xevanio.de/en/projects/l4d-l4d2/customplayerstatsv14B121-modern/_check/check.php?type=CustomPlayerStatsv14B121-Modern&url='.$_SERVER['HTTP_HOST'].''.$_SERVER['REQUEST_URI'].'');
 	function mysql_result($result, $row, $field = 0)
 	{
 		$result->data_seek($row);
