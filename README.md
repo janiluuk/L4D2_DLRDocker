@@ -30,6 +30,12 @@ If you change something, such as edit config file or add / remove files, the con
 
 ## Configuration
 
+### First steps
+
+- Modify l4d2/cfg/server.cfg to match your preference
+- Modify `docker-compose.yml` to match your preference
+- Modify `l4d2/host.txt` and `l4d2/motd.txt` to match your preference
+
 ### Editing `docker-compose.yml`
 
 * Change all passwords to new ones
@@ -52,7 +58,7 @@ This contains libz library that game needs to connect to local database instance
 Under `docker-compose.yml` there are 2 additional servers. Feel free to add more if needed.
 For each server, you'll need separate config file. In example setup these server files are called `server_2.cfg` and `server_3.cfg`. You can copy `server.cfg` and change the contents accordingly.
 
-## RCON Admin Web panel
+## RCON Admin & Web panel
 
 See [rcon instructions](https://github.com/rcon-web-admin/rcon-web-admin#visit-the-ui) and
 access the web UI at http://YOUR_DOCKER_HOST:4326
@@ -60,8 +66,6 @@ For example by default http://localhost:4326 should work
 *Only 1 server is configured by default. You'll have to add additional servers through "Server Management" - section*
 For web panel you can connect to "http://localhost:8080" to access the statistics. 
 *Web panel might still have some issues, expect fully tested one on next release*
-
-
 
 ## Options
 * TODO
