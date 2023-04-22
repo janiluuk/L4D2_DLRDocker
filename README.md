@@ -17,6 +17,8 @@ This setup lets you run Left4Dead 2 server with pre-installed [DLR](https://gith
 * Choose name (f.ex L4D2 DLR)
 * Choose source as "Local directory", press Select and choose the directory that you unpacked the release, and press "Continue"
 * After brewing, you should have full setup running. 
+* Connect from game to localhost to use the server.
+
 	
 ### Linux
 
@@ -59,6 +61,10 @@ This contains libz library that game needs to connect to local database instance
 
 Under `docker-compose.yml` there are 2 additional servers. Feel free to add more if needed.
 For each server, you'll need separate config file. In example setup these server files are called `server_2.cfg` and `server_3.cfg`. You can copy `server.cfg` and change the contents accordingly.
+
+## Adding public server
+
+If you want to run public server from home, you'll need to direct port from your router to the computer running the server. Port `27015` TCP & UDP is needed for single server. Running this in public server should work out of the box apart from adding firewall rules.
 
 ## RCON Admin & Web panel
 
