@@ -31,6 +31,10 @@ services:
        -  ${PWD}/l4d2/host.txt:/home/louis/l4d2/left4dead2/host.txt
        -  ${PWD}/l4d2/cfg/autoexec.cfg:/home/louis/l4d2/left4dead2/cfg/autoexec.cfg
        -  ${PWD}/l4d2/libz.so.1:/usr/lib/libz.so.1
+       -  ${PWD}/l4d2/custom/sound/player/survivor/voice/adawong:/home/louis/l4d2/left4dead2/sound/player/survivor/voice/adawong
+       -  ${PWD}/l4d2/custom/materials/models/brought_to_you_by:/home/louis/l4d2/left4dead2/materials/models/brought_to_you_by
+       -  ${PWD}/l4d2/custom/models/survivors:/home/louis/l4d2/left4dead2/models/survivors
+
        - './l4d2/addons:/home/louis/l4d2/left4dead2/addons:rw'
        - './l4d2/cfg/sourcemod:/home/louis/l4d2/left4dead2/cfg/sourcemod:rw'
   l4d2_2:
@@ -46,6 +50,25 @@ services:
       - 27016:27016/udp
     volumes:
        -  ${PWD}/l4d2/cfg/server_2.cfg:/home/louis/l4d2/left4dead2/cfg/server.cfg
+       -  ${PWD}/l4d2/motd.txt:/home/louis/l4d2/left4dead2/motd.txt
+       -  ${PWD}/l4d2/host.txt:/home/louis/l4d2/left4dead2/host.txt
+       -  ${PWD}/l4d2/cfg/autoexec.cfg:/home/louis/l4d2/left4dead2/cfg/autoexec.cfg
+       -  ${PWD}/l4d2/libz.so.1:/usr/lib/libz.so.1
+       - './l4d2/addons:/home/louis/l4d2/left4dead2/addons:rw'
+       - './l4d2/cfg/sourcemod:/home/louis/l4d2/left4dead2/cfg/sourcemod:rw'
+  l4d2_3:
+    image: left4devops/l4d2
+    restart: always
+    environment:
+      HOSTNAME: "[DLR] Survival!"
+      RCON_PASSWORD: "annikkikyllikki"
+      MAP: "e6m1_deltalab"
+      PORT: 27017
+    ports:
+      - 27017:27017/tcp
+      - 27017:27017/udp
+    volumes:
+       -  ${PWD}/l4d2/cfg/server_3.cfg:/home/louis/l4d2/left4dead2/cfg/server.cfg
        -  ${PWD}/l4d2/motd.txt:/home/louis/l4d2/left4dead2/motd.txt
        -  ${PWD}/l4d2/host.txt:/home/louis/l4d2/left4dead2/host.txt
        -  ${PWD}/l4d2/cfg/autoexec.cfg:/home/louis/l4d2/left4dead2/cfg/autoexec.cfg
