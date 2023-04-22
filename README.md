@@ -7,8 +7,8 @@ This setup lets you run Left4Dead 2 server with pre-installed [DLR](https://gith
 
 ### Windows
 
-* Download the latest release, unpack it to some directory. 
-* Go to https://www.docker.com/ - click "Download Docker Desktop"
+* Download the latest release from https://github.com/janiluuk/L4D2_DLRDocker/releases/, and unpack it to some directory. 
+* Go to https://www.docker.com/, click "Download Docker Desktop"
 * Install Docker
 * Restart computer
 * Run Docker Desktop
@@ -19,6 +19,7 @@ This setup lets you run Left4Dead 2 server with pre-installed [DLR](https://gith
 * After brewing, you should have full setup running. 
 	
 ### Linux
+
 To get up and running quickly, use
 
 ```
@@ -35,6 +36,7 @@ If you change something, such as edit config file or add / remove files, the con
 - Modify l4d2/cfg/server.cfg to match your preference
 - Modify `docker-compose.yml` to match your preference
 - Modify `l4d2/host.txt` and `l4d2/motd.txt` to match your preference
+- Modify `l4d2/addons` directory to your likings. Add admin users etc.
 
 ### Editing `docker-compose.yml`
 
