@@ -1,6 +1,16 @@
 version: '3.8'
 
 services:
+  web:
+    image: itzg/rcon
+    environment:
+      RWA_USERNAME: admin
+      RWA_PASSWORD: 4dm1n
+      RWA_ADMIN: "TRUE"
+      RWA_RCON_PORT: 27015
+      # is referring to the hostname of 'l4d2'
+      RWA_RCON_HOST: l4d2
+
   l4d2:
     image: left4devops/l4d2
     restart: always
@@ -64,15 +74,15 @@ services:
     environment:
       MARIADB_ROOT_PASSWORD: mysql
     volumes:
-      - ./mysqldata:/var/lib/mysql
+      - './mysqldata:/var/lib/mysql:rw'
   adminer:
     image: adminer
     restart: always
     ports:
-      - 8000:8000   
+      - 8000:8000
   nginx:
     image: nginx:alpine
-    ports:  
+    ports:
       - "8080:8080"
     volumes:
             - './php-files:/var/www/html'
