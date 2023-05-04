@@ -1,29 +1,15 @@
 version: '3.8'
 
 services:
-  web:
-    image: itzg/rcon
-    environment:
-      RWA_USERNAME: admin
-      RWA_PASSWORD: 4dm1n
-      RWA_ADMIN: "TRUE"
-      RWA_RCON_PORT: 27015
-      # is referring to the hostname of 'l4d2'
-      RWA_RCON_HOST: l4d2
-      RWA_RCON_PASSWORD: changeme
-
-    ports:
-      - 4326:4326
-      - 4327:4327
   l4d2:
     image: left4devops/l4d2
     restart: always
     environment:
       HOSTNAME: "[DLR] Test Server"
       RCON_PASSWORD: "changeeme"
-      MAP: "c2m1_highway"
+      DEFAULT_MAP: "c2m1_highway"
     ports:
-      - 27015:27015/tcp
+      - 27015:27015
       - 27015:27015/udp
     volumes:
        -  ${PWD}/l4d2/cfg/server.cfg:/home/louis/l4d2/left4dead2/cfg/server.cfg
@@ -59,7 +45,7 @@ services:
 #      HOSTNAME: "[DLR] Survival!"
 #      RCON_PASSWORD: "changeme"
 #      MAP: "e6m1_deltalab"
-#      PORT: 27017
+  #      PORT: 27017
 #    ports:
 #      - 27017:27017/tcp
 #      - 27017:27017/udp
