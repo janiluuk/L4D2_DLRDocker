@@ -14,7 +14,6 @@ services:
     ports:
       - 4326:4326
       - 4327:4327
-
   l4d2:
     image: left4devops/l4d2
     restart: always
