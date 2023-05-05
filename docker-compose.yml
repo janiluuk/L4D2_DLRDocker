@@ -10,6 +10,10 @@ services:
       RWA_RCON_PORT: 27015
       # is referring to the hostname of 'l4d2'
       RWA_RCON_HOST: l4d2
+      RWA_RCON_PASSWORD: changeme
+    ports:
+      - 4326:4326
+      - 4327:4327
 
   l4d2:
     image: left4devops/l4d2
