@@ -10,29 +10,27 @@ services:
       RWA_RCON_PORT: 27015
       # is referring to the hostname of 'l4d2'
       RWA_RCON_HOST: l4d2
-      RWA_RCON_PASSWORD: changeme
-    ports:
-      - 4326:4326
-      - 4327:4327
+      RWA_RCON_PASSWORD: "changeme"
+
   l4d2:
-    image: left4devops/l4d2
+    image: janiluuk/l4d2dlr:v1.1
     restart: always
     environment:
-      HOSTNAME: "[DLR] Test Server"
+      SV_HOSTNAME: "[DLR] Test Server"
       RCON_PASSWORD: "changeme"
-      MAP: "c2m1_highway"
       DEFAULT_MAP: "c2m1_highway"
+      SV_PORT: 27015
     ports:
       - 27015:27015
       - 27015:27015/udp
     volumes:
-       -  ${PWD}/l4d2/cfg/server.cfg:/home/louis/l4d2/left4dead2/cfg/server.cfg
-       -  ${PWD}/l4d2/motd.txt:/home/louis/l4d2/left4dead2/motd.txt
-       -  ${PWD}/l4d2/host.txt:/home/louis/l4d2/left4dead2/host.txt
-       -  ${PWD}/l4d2/cfg/autoexec.cfg:/home/louis/l4d2/left4dead2/cfg/autoexec.cfg
-       -  ${PWD}/l4d2/libz/libz.so.1:/usr/lib/libz.so.1
-       - './l4d2/addons:/home/louis/l4d2/left4dead2/addons:rw'
-       - './l4d2/cfg/sourcemod:/home/louis/l4d2/left4dead2/cfg/sourcemod:rw'
+       -  "./l4d2/cfg/server.cfg:/home/appuser/l4d2server/left4dead2/cfg/server.cfg"
+       -  "./l4d2/motd.txt:/home/appuser/l4d2server/left4dead2/motd.txt"
+       -  "./l4d2/host.txt:/home/appuser/l4d2server/left4dead2/host.txt"
+       -  "./l4d2/cfg/autoexec.cfg:/home/appuser/l4d2server/left4dead2/cfg/autoexec.cfg"
+#       -  ./l4d2/libz/libz.so.1:/usr/lib/libz.so.1
+#       - "./l4d2/addons/:/home/appuser/l4d2server/left4dead2/addons/:rw"
+       - "./l4d2/cfg/sourcemod/:/home/appuser/l4d2server/left4dead2/cfg/sourcemod/:rw"
 #  l4d2_2:
 #    image: left4devops/l4d2
 #    restart: always
@@ -45,13 +43,13 @@ services:
 #      - 27016:27016/tcp
 #      - 27016:27016/udp
 #    volumes:
-#       -  ${PWD}/l4d2/cfg/server_2.cfg:/home/louis/l4d2/left4dead2/cfg/server.cfg
-#       -  ${PWD}/l4d2/motd.txt:/home/louis/l4d2/left4dead2/motd.txt
-#       -  ${PWD}/l4d2/host.txt:/home/louis/l4d2/left4dead2/host.txt
-#       -  ${PWD}/l4d2/cfg/autoexec.cfg:/home/louis/l4d2/left4dead2/cfg/autoexec.cfg
+#       -  ${PWD}/l4d2/cfg/server_2.cfg:/home/appuser/l4d2/left4dead2/cfg/server.cfg
+#       -  ${PWD}/l4d2/motd.txt:/home/appuser/l4d2/left4dead2/motd.txt
+#       -  ${PWD}/l4d2/host.txt:/home/appuser/l4d2/left4dead2/host.txt
+#       -  ${PWD}/l4d2/cfg/autoexec.cfg:/home/appuser/l4d2/left4dead2/cfg/autoexec.cfg
 #       -  ${PWD}/l4d2/libz.so.1:/usr/lib/libz.so.1
-#       - './l4d2/addons:/home/louis/l4d2/left4dead2/addons:rw'
-#       - './l4d2/cfg/sourcemod:/home/louis/l4d2/left4dead2/cfg/sourcemod:rw'
+#       - './l4d2/addons:/home/appuser/l4d2/left4dead2/addons:rw'
+#       - './l4d2/cfg/sourcemod:/home/appuser/l4d2/left4dead2/cfg/sourcemod:rw'
 #  l4d2_3:
 #    image: left4devops/l4d2
 #    restart: always
@@ -64,13 +62,13 @@ services:
 #      - 27017:27017/tcp
 #      - 27017:27017/udp
 #    volumes:
-#       -  ${PWD}/l4d2/cfg/server_3.cfg:/home/louis/l4d2/left4dead2/cfg/server.cfg
-#       -  ${PWD}/l4d2/motd.txt:/home/louis/l4d2/left4dead2/motd.txt
-#       -  ${PWD}/l4d2/host.txt:/home/louis/l4d2/left4dead2/host.txt
-#       -  ${PWD}/l4d2/cfg/autoexec.cfg:/home/louis/l4d2/left4dead2/cfg/autoexec.cfg
+#       -  ${PWD}/l4d2/cfg/server_3.cfg:/home/appuser/l4d2/left4dead2/cfg/server.cfg
+#       -  ${PWD}/l4d2/motd.txt:/home/appuser/l4d2/left4dead2/motd.txt
+#       -  ${PWD}/l4d2/host.txt:/home/appuser/l4d2/left4dead2/host.txt
+#       -  ${PWD}/l4d2/cfg/autoexec.cfg:/home/appuser/l4d2/left4dead2/cfg/autoexec.cfg
 #       -  ${PWD}/l4d2/libz.so.1:/usr/lib/libz.so.1
-#       - './l4d2/addons:/home/louis/l4d2/left4dead2/addons:rw'
-#       - './l4d2/cfg/sourcemod:/home/louis/l4d2/left4dead2/cfg/sourcemod:rw'
+#       - './l4d2/addons:/home/appuser/l4d2/left4dead2/addons:rw'
+#       - './l4d2/cfg/sourcemod:/home/appuser/l4d2/left4dead2/cfg/sourcemod:rw'
 
   db:
     image: mariadb
