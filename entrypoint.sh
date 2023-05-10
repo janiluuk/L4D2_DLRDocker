@@ -8,7 +8,11 @@
   -console \
   -game left4dead2 \
   -strictportbind \
+  -hostip "$SV_ADDRESS" \
   -ip 0.0.0.0 \
   +maxplayers 8 \
   +map "$MAP" \
-  -hostport 27015
+  +hostport 27015 \
+  -netconport 27505 \
+  +clientport 27006 \
+  -debug

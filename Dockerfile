@@ -57,16 +57,16 @@ WORKDIR ${STEAMCMDDIR}
 
 # Install Competitive Rework
 
-COPY --chown=appuser:appuser ./l4d2/addons /home/appuser/l4d2server/left4dead2/
+COPY --chown=appuser:appuser ./l4d2/addons /home/appuser/l4d2server/left4dead2/addons/
 COPY --chown=appuser:appuser ./l4d2/cfg/server.cfg /home/appuser/l4d2server/left4dead2/cfg/server.cfg
 COPY --chown=appuser:appuser ./l4d2/cfg/autoexec.cfg /home/appuser/l4d2server/left4dead2/cfg/autoexec.cfg
-COPY --chown=appuser:appuser ./l4d2/cfg/sourcemod /home/appuser/l4d2server/left4dead2/cfg/sourcemod
+COPY --chown=appuser:appuser ./l4d2/cfg/sourcemod /home/appuser/l4d2server/left4dead2/cfg/sourcemod/
 
 COPY --chown=appuser:appuser ./l4d2/host.txt /home/appuser/l4d2server/left4dead2/host.txt
 COPY --chown=appuser:appuser ./l4d2/motd.txt /home/appuser/l4d2server/left4dead2/motd.txt
 
 COPY --chown=appuser:appuser ./l4d2/cfg/admins.cfg /home/appuser/l4d2server/left4dead2/addons/sourcemod/configs/admins.cfg
-COPY --chown=appuser:appuser ./l4d2 /home/appuser/l4d2server/left4dead2
+COPY --chown=appuser:appuser ./l4d2 /home/appuser/l4d2server/left4dead2/l4d2/
 COPY --chown=appuser:appuser entrypoint.sh /home/appuser/entrypoint.sh
 
 USER appuser

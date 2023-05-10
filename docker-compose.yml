@@ -11,7 +11,11 @@ services:
       # is referring to the hostname of 'l4d2'
       RWA_RCON_HOST: l4d2
       RWA_RCON_PASSWORD: "changeme"
-
+    ports:
+      - 4326:4326
+      - 4326:4326/udp
+      - 4327:4327
+      - 4327:4327/udp
   l4d2:
     image: janiluuk/l4d2dlr:v1.1
     restart: always
@@ -20,17 +24,18 @@ services:
       RCON_PASSWORD: "changeme"
       DEFAULT_MAP: "c2m1_highway"
       SV_PORT: 27015
+      SV_ADDRESS: 88.113.169.215
     ports:
       - 27015:27015
       - 27015:27015/udp
     volumes:
-       -  "./l4d2/cfg/server.cfg:/home/appuser/l4d2server/left4dead2/cfg/server.cfg"
+       -  ./l4d2/cfg/server.cfg:/home/appuser/l4d2server/left4dead2/cfg/server.cfg
        -  "./l4d2/motd.txt:/home/appuser/l4d2server/left4dead2/motd.txt"
        -  "./l4d2/host.txt:/home/appuser/l4d2server/left4dead2/host.txt"
-       -  "./l4d2/cfg/autoexec.cfg:/home/appuser/l4d2server/left4dead2/cfg/autoexec.cfg"
-#       -  ./l4d2/libz/libz.so.1:/usr/lib/libz.so.1
+#       -  "./l4d2/cfg/autoexec.cfg:/home/appuser/l4d2server/left4dead2/cfg/autoexec.cfg"
+       -  ./l4d2/libz/libz.so.1:/usr/lib/libz.so.1
 #       - "./l4d2/addons/:/home/appuser/l4d2server/left4dead2/addons/:rw"
-       - "./l4d2/cfg/sourcemod/:/home/appuser/l4d2server/left4dead2/cfg/sourcemod/:rw"
+       - "./l4d2/cfg/sourcemod:/home/appuser/l4d2server/left4dead2/cfg/sourcemod:rw"
 #  l4d2_2:
 #    image: left4devops/l4d2
 #    restart: always
