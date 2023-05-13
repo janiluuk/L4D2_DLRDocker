@@ -29,13 +29,13 @@ services:
       - 27015:27015
       - 27015:27015/udp
     volumes:
-       -  ./l4d2/cfg/server.cfg:/home/appuser/l4d2server/left4dead2/cfg/server.cfg
-       -  "./l4d2/motd.txt:/home/appuser/l4d2server/left4dead2/motd.txt"
-       -  "./l4d2/host.txt:/home/appuser/l4d2server/left4dead2/host.txt"
-#       -  "./l4d2/cfg/autoexec.cfg:/home/appuser/l4d2server/left4dead2/cfg/autoexec.cfg"
-       -  ./l4d2/libz/libz.so.1:/usr/lib/libz.so.1
-#       - "./l4d2/addons/:/home/appuser/l4d2server/left4dead2/addons/:rw"
-       - "./l4d2/cfg/sourcemod:/home/appuser/l4d2server/left4dead2/cfg/sourcemod:rw"
+       - "$(pwd)"/l4d2/cfg/server.cfg:/home/appuser/l4d2server/left4dead2/cfg/server.cfg
+       - "$(pwd)"/l4d2/motd.txt:/home/appuser/l4d2server/left4dead2/motd.txt
+       - "$(pwd)"/l4d2/host.txt:/home/appuser/l4d2server/left4dead2/host.txt
+       - "$(pwd)"/l4d2/cfg/autoexec.cfg:/home/appuser/l4d2server/left4dead2/cfg/autoexec.cfg
+       - "$(pwd)"/l4d2/libz/libz.so.1:/usr/lib/libz.so.1
+       - "$(pwd)"/l4d2/addons:/home/appuser/l4d2server/left4dead2/addons:rw
+       - "$(pwd)"/l4d2/cfg/sourcemod:/home/appuser/l4d2server/left4dead2/cfg/sourcemod:rw
 #  l4d2_2:
 #    image: left4devops/l4d2
 #    restart: always
