@@ -17,13 +17,16 @@ services:
       - 4327:4327
       - 4327:4327/udp
   l4d2:
-    image: janiluuk/l4d2dlr:v1.1
+    image: left4devops/l4d2:latest
     restart: always
     environment:
       SV_HOSTNAME: "[DLR] Test Server"
       RCON_PASSWORD: "changeme"
       DEFAULT_MAP: "c2m1_highway"
       SV_PORT: 27015
+      HOSTNAME: "L4D2"
+      REGION: 255
+
       SV_ADDRESS: 88.113.169.215
     ports:
       - 27015:27015
@@ -31,7 +34,7 @@ services:
     volumes:
       - type: bind
         source: ./l4d2/cfg/server.cfg
-        target: "/home/appuser/l4d2server/left4dead2/cfg/server.cfg"
+        target: /home/appuser/l4d2server/left4dead2/cfg/server.cfg
       - type: bind
         source: ./l4d2/host.txt
         target: /home/appuser/l4d2server/left4dead2/host.txt
@@ -44,12 +47,8 @@ services:
       - type: bind
         source: ./l4d2/libz/libz.so.1
         target: /usr/lib/libz.so.1
-      - type: bind
-        source: ./l4d2/addons
-        target: /home/appuser/l4d2server/left4dead2/addons
-      - type: bind
-        source: ./l4d2/cfg/sourcemod
-        target: /home/appuser/l4d2server/left4dead2/cfg/sourcemod
+      - ./addons:/home/appuser/l4d2/left4dead2/addons:rw
+      - ./sourcemod:/home/appuser/l4d2/left4dead2/cfg/sourcemod:rw
 #  l4d2_2:
 #    image: left4devops/l4d2
 #    restart: always

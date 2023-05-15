@@ -1,18 +1,37 @@
 #!/bin/bash
 
-#envsubst < /home/appuser/server.cfg.tpl > /home/appuser/l4d2server/left4dead2/cfg/server.cfg
+# Update Game
+./steamcmd.sh +force_install_dir "./${INSTALL_DIR}" +login anonymous +app_update "${GAME_ID}" +quit
+cd "${INSTALL_DIR}" || exit 50
 
-/home/appuser/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/appuser/l4d2server +app_update 222860 validate +quit
+# Server Config
+if [ "${INSTALL_DIR}" = "l4d2" ]; then
+    CONFIG_DIR="left4dead2/cfg"
+elif [ "${INSTALL_DIR}" = "l4d" ]; then
+    CONFIG_DIR="left4dead/cfg"
+else
+  exit 100
+fi
+CONFIG_FILE="${CONFIG_DIR}/server.cfg"
+if [ -f "${CONFIG_FILE}" ]; then
+    echo "server.cfg already exists"
+else
+    cat > "${CONFIG_FILE}" <<EOF
+hostname "${HOSTNAME}"
+sv_region ${REGION}
+sv_logecho 1
+motd_enabled 0
+EOF
+    if [ -n "${RCON_PASSWORD}" ]; then
+        echo "rcon_password \"${RCON_PASSWORD}\"" >> "${CONFIG_FILE}"
+    fi
+fi
 
-/home/appuser/l4d2server/srcds_run \
-  -console \
-  -game left4dead2 \
-  -strictportbind \
-  -hostip "$SV_ADDRESS" \
-  -ip 0.0.0.0 \
-  +maxplayers 8 \
-  +map "$MAP" \
-  +hostport 27015 \
-  -netconport 27505 \
-  +clientport 27006 \
-  -debug
+
+# Start Game
+if [ $# -eq 0 ]; then
+    ./srcds_run -port "$PORT" +map "$MAP"
+else
+    ./srcds_run "$@"
+fi
+
