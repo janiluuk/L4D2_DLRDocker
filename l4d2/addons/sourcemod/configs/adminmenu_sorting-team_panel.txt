@@ -1,0 +1,22 @@
+/**
+ * Just add this section to your file to get them to display in the order listed.
+ */
+
+"Menu"
+{
+		
+	"BwASwitchMenu"
+	{
+		"item"		"bwaswitchplayer"
+		"item"		"bwaswapplayers"
+		"item"		"bwaunscramble"
+		"item"		"bwaswapteams"
+		"item"		"bwapause"
+		"item"		"bwaunpause"
+		"item"		"bwacurrteams"
+		"item"		"bwalastteams"
+		"item"		"bwadebugpanel"
+	}
+	
+}
+

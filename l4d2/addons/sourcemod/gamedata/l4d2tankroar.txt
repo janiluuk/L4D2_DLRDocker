@@ -1,0 +1,16 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Signatures"
+		{
+			"CTerrorPlayer_Fling"
+			{
+				"library"	"server"
+				"linux"	"@_ZN13CTerrorPlayer5FlingERK6Vector17PlayerAnimEvent_tP20CBaseCombatCharacterf"
+				"windows" "\x81\xEC\x2A\x2A\x2A\x2A\x55\x57\x8B\xE9\x33\xFF\x57\x89\x2A\x2A\x2A\xE8"
+				/* 81 EC ? ? ? ? 55 57 8B E9 33 FF 57 89 ? ? ? E8 */
+			}
+		}
+	}
+}

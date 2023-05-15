@@ -1,0 +1,19 @@
+"Phrases"
+{
+	"Information"
+	{
+		"de"	"Tipp"
+	}
+	"Take witch"
+	{
+		"de"	"Man kann die Kontrolle uber die Witch mit BENUTZEN uebernehmen"
+	}
+	"Lose witch"
+	{
+		"de"	"Drucke noch einmal BENUTZEN, um die Witch wieder zu verlassen"
+	}
+	"Sit witch"
+	{
+		"de"	"Man kann sich als Witch mit DUCKEN setzen oder aufstehen"
+	}
+}

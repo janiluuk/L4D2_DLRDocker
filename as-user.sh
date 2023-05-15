@@ -9,3 +9,6 @@ mkdir -p .steam/sdk32/ && ln -s ~/linux32/steamclient.so ~/.steam/sdk32/steamcli
 
 # Install game
 ./steamcmd.sh +force_install_dir "./${INSTALL_DIR}" +login anonymous +app_update "${GAME_ID}" +quit
+
+cp -R /data/* "./${INSTALL_DIR}"
+cp -R /data/addons/*.vdf "./${INSTALL_DIR}"

@@ -1,0 +1,17 @@
+"Phrases"
+{
+	"L4D1_Text"
+	{
+		"en"	"BUILDING BARRICADE..."
+	}
+
+	"L4D2_Text"
+	{
+		"en"	"Building plank..."
+	}
+
+	"L4D2_Title"
+	{
+		"en"	"BARRICADE"
+	}
+}

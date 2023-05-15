@@ -1,7 +1,0 @@
-//Decals
-
-//Decal Files (Download and Precache)
-
-//Sound Files (Download and Precache)
-
-//Model Files (Download and Precache)

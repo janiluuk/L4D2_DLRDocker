@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   web:
     image: itzg/rcon
@@ -26,29 +25,17 @@ services:
       SV_PORT: 27015
       HOSTNAME: "L4D2"
       REGION: 255
-
       SV_ADDRESS: 88.113.169.215
     ports:
       - 27015:27015
       - 27015:27015/udp
     volumes:
       - type: bind
-        source: ./l4d2/cfg/server.cfg
-        target: /home/appuser/l4d2server/left4dead2/cfg/server.cfg
-      - type: bind
-        source: ./l4d2/host.txt
-        target: /home/appuser/l4d2server/left4dead2/host.txt
-      - type: bind
-        source: ./l4d2/motd.txt
-        target: /home/appuser/l4d2server/left4dead2/motd.txt
-      - type: bind
-        source: ./l4d2/cfg/autoexec.cfg
-        target: /home/appuser/l4d2server/left4dead2/cfg/autoexec.cfg
-      - type: bind
         source: ./l4d2/libz/libz.so.1
         target: /usr/lib/libz.so.1
-      - ./addons:/home/appuser/l4d2/left4dead2/addons:rw
-      - ./sourcemod:/home/appuser/l4d2/left4dead2/cfg/sourcemod:rw
+      - type: bind
+        source: "/c/Users/jani/Downloads/L4D2_DLRDocker/l4d2"
+        target: /data
 #  l4d2_2:
 #    image: left4devops/l4d2
 #    restart: always

@@ -1,0 +1,123 @@
+/*
+	******************************************************************************************************************************************************
+
+	You can display phrases in chat with color using any of the methods below:
+
+	Using color codes:
+		•  // Default (use instead of \x01), Alt + 01 Keyboard Shortcut
+		•  // Light Green (use instead of \x03), Alt + 03 Keyboard Shortcut
+		•  // Orange (use instead of \x04), Alt + 04 Keyboard Shortcut
+		•  // Olive (use instead of \x05), Alt + 05 Keyboard Shortcut
+
+	or
+
+	Using color tags:
+		• {default} // Default (use instead of \x01)
+		• {lightgreen} // Light Green (use instead of \x03)
+		• {orange} // Orange (use instead of \x04)
+		• {olive} // Green (use instead of \x05)
+
+	******************************************************************************************************************************************************
+*/
+
+"Phrases"
+{
+	"Select an eye option"
+	{
+		"en"			"Select an eye option"
+		"es"			"Seleccione una opción de ojo"
+		"hu"			"Válassz egy szem opciót"
+		"pt"			"Selecione uma opção do olho"
+		"pt_p"			"Selecione uma opção do olho"
+		"no"			"Velg et øyealternativ"
+		"ru"			"Выберите вариант глаза"
+	}
+
+	"Select a particle"
+	{
+		"en"			"Select a particle"
+		"es"			"Seleccionar una partícula"
+		"hu"			"Válassz egy részecskét"
+		"pt"			"Selecione uma partícula"
+		"pt_p"			"Selecione uma partícula"
+		"no"			"Velg en partikkel"
+		"ru"			"Выберите частицу"
+	}
+
+	"Both eyes"
+	{
+		"en"			"Both eyes"
+		"es"			"Ambos ojos"
+		"hu"			"Mindkét szem"
+		"pt"			"Ambos os olhos"
+		"pt_p"			"Ambos os olhos"
+		"no"			"Begge øynene"
+		"ru"			"Оба глаза"
+	}
+
+	"Left eye"
+	{
+		"en"			"Left eye"
+		"es"			"Ojo izquierdo"
+		"hu"			"Ball szem"
+		"pt"			"Olho esquerdo"
+		"pt_p"			"Olho esquerdo"
+		"no"			"Venstre øye"
+		"ru"			"Левый глаз"
+	}
+
+	"Right eye"
+	{
+		"en"			"Right eye"
+		"es"			"Ojo derecho"
+		"hu"			"Jobb szem"
+		"pt"			"Olho direito"
+		"pt_p"			"Olho direito"
+		"no"			"Høyre øye"
+		"ru"			"Правый глаз"
+	}
+
+	"Particle 0"
+	{
+		"en"			"None"
+		"es"			"Ninguna"
+		"hu"			"Semmilyen"
+		"pt"			"Nenhuma"
+		"pt_p"			"Nenhuma"
+		"no"			"Ingen"
+		"ru"			"Ни один"
+	}
+
+	"Particle 1"
+	{
+		"en"			"Witch"
+		"es"			"Bruja"
+		"hu"			"Boszorka"
+		"pt"			"Witch"
+		"pt_p"			"Witch"
+		"no"			"Heks"
+		"ru"			"Ведьма"
+	}
+
+	"Particle 2"
+	{
+		"en"			"Pipebomb"
+		"es"			"Bomba casera"
+		"hu"			"Csőbomba"
+		"pt"			"Pipebomb"
+		"pt_p"			"Pipebomb"
+		"no"			"Pipebomb"
+		"ru"			"Самодельная бомба"
+	}
+	
+	"Particle 3"
+	{
+		"en"			"Fire"
+		"es"			"Fuego"
+		"hu"			"Tűz"
+		"pt"			"Fogo"
+		"pt_p"			"Fogo"
+		"no"			"Brann"
+		"ru"			"Огонь"
+	}
+}

@@ -1,8 +1,0 @@
-c1m1_hotel
-c2m1_highway
-c3m1_plankcountry
-c4m1_milltown_a
-c5m1_waterfront
-c6m1_riverbank
-c7m1_docks
-c8m1_apartment
