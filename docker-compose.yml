@@ -25,7 +25,8 @@ services:
       SV_PORT: 27015
       HOSTNAME: "L4D2"
       REGION: 255
-      SV_ADDRESS: 88.113.169.215
+      INTERNAL_IP: 0.0.0.0
+      PUBLIC_IP: 88.113.169.215
     ports:
       - 27015:27015
       - 27015:27015/udp

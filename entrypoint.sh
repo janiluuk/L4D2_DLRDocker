@@ -16,7 +16,8 @@ CONFIG_FILE="${CONFIG_DIR}/server.cfg"
 if [ -f "${CONFIG_FILE}" ]; then
     echo "server.cfg already exists"
 else
-    cat > "${CONFIG_FILE}" <<EOF
+    cp "${CONFIG_DIR}/server.cfg.tpl" $CONFIG_FILE
+    cat >> "${CONFIG_FILE}" <<EOF
 hostname "${HOSTNAME}"
 sv_region ${REGION}
 sv_logecho 1
@@ -30,7 +31,8 @@ fi
 
 # Start Game
 if [ $# -eq 0 ]; then
-    ./srcds_run -port "$PORT" +map "$MAP"
+    ./srcds_run -port "$PORT" +map "$MAP" -maxplayers 8 +hostip ${PUBLIC_IP} -ip ${INTERNAL_IP} +hostport "$PORT" +clientport 27007 -nohltv +exec server.cfg
+
 else
     ./srcds_run "$@"
 fi
