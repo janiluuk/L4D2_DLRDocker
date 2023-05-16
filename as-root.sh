@@ -9,3 +9,4 @@ yum -y install curl wget \
 yum -y update --security
 
 useradd louis
+

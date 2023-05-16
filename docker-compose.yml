@@ -16,7 +16,7 @@ services:
       - 4327:4327
       - 4327:4327/udp
   l4d2:
-    image: left4devops/l4d2:latest
+    image: janiluuk/l4d2dlr:latest
     restart: always
     environment:
       SV_HOSTNAME: "[DLR] Test Server"
@@ -34,7 +34,7 @@ services:
         source: ./l4d2/libz/libz.so.1
         target: /usr/lib/libz.so.1
       - type: bind
-        source: "/c/Users/jani/Downloads/L4D2_DLRDocker/l4d2"
+        source: "./l4d2"
         target: /data
 #  l4d2_2:
 #    image: left4devops/l4d2
