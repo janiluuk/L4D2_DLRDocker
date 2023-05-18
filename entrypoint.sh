@@ -31,7 +31,7 @@ fi
 
 # Start Game
 if [ $# -eq 0 ]; then
-    ./srcds_run -port "$PORT" +map "$MAP" -maxplayers 8 +hostip ${PUBLIC_IP} -ip ${INTERNAL_IP} +hostport "$PORT" +clientport 27007 -nohltv +exec server.cfg
+    ./srcds_run -port "${PORT}" +map "${MAP}" -maxplayers 8 +hostname "{$HOSTNAME}" +hostip "${PUBLIC_IP}" -ip "${INTERNAL_IP}" +hostport "${PORT}" +clientport 27007 -nohltv +exec server.cfg -console -debug
 
 else
     ./srcds_run "$@"

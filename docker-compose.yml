@@ -6,7 +6,7 @@ services:
       RWA_USERNAME: admin
       RWA_PASSWORD: 4dm1n
       RWA_ADMIN: "TRUE"
-      RWA_RCON_PORT: 27015
+      RWA_RCON_PORT: 27020
       # is referring to the hostname of 'l4d2'
       RWA_RCON_HOST: l4d2
       RWA_RCON_PASSWORD: "changeme"
@@ -22,18 +22,16 @@ services:
       SV_HOSTNAME: "[DLR] Test Server"
       RCON_PASSWORD: "changeme"
       DEFAULT_MAP: "c2m1_highway"
-      SV_PORT: 27015
-      HOSTNAME: "L4D2"
+      MAP: "c2m1_highway"
+      SV_PORT: 27020
+      HOSTNAME: "[DLR] Test Server!"
       REGION: 255
-      INTERNAL_IP: 0.0.0.0
-      PUBLIC_IP: 88.113.169.215
+      INTERNAL_IP: "0.0.0.0"
+      PUBLIC_IP: "88.113.169.215"
     ports:
-      - 27015:27015
-      - 27015:27015/udp
+      - 27020:27020
+      - 27020:27020/udp
     volumes:
-      - type: bind
-        source: ./l4d2/libz/libz.so.1
-        target: /usr/lib/libz.so.1
       - type: bind
         source: "./l4d2"
         target: /data

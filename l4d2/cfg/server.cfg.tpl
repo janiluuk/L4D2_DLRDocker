@@ -1,5 +1,3 @@
-rcon_password "changeme"
-hostname "[DLR] Testserver!"
 sv_allow_lobby_connect_only 0
 sv_steamgroup "3274135"
 sv_region "2"
