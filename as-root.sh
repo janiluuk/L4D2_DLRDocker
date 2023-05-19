@@ -4,7 +4,7 @@ yum -y install curl wget \
   python3 binutils bc jq tmux \
   glibc.i686 libstdc++ libstdc++.i686 \
   shadow-utils util-linux file nmap-ncat iproute \
-  SDL2.i686 SDL2.x86_64 libcurl-devel.i686 zlib-devel.i686
+  SDL2.i686 SDL2.x86_64 zlib.i686
 
 yum -y update --security
 
