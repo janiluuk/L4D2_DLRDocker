@@ -1,6 +1,5 @@
 sv_allow_lobby_connect_only 0
 sv_steamgroup "3274135"
-sv_region "2"
 sv_pure "0"
 sv_search_key "no-steam"
 sv_tags "no-steam"
@@ -214,7 +213,8 @@ sm_cvar survivor_friendly_fire_factor_hard "0"
 sm_cvar survivor_friendly_fire_factor_expert "0"
 
 sm_cvar allow_all_bot_survivor_team 1
-sm_cvar sb_all_bot_game 0
+sm_cvar sb_all_bot_game 1
+
 
 //sm_cvar nb_assault "0"
 sm_cvar sb_friend_immobilized_reaction_time_normal 0 // Default 2
@@ -254,6 +254,7 @@ exec banned_ip.cfg //loads banned users' ips
 writeip //Save the ban list to banned_ip.cfg.
 writeid //Wrties a list of permanently-banned user IDs to banned_user.cfg.
 
+exec autoexec.cfg
 
 /////////////////////////
 //Master server - "setmaster" - add/remove/enable/disable master servers

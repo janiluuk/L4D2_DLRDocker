@@ -19,12 +19,11 @@ services:
     image: janiluuk/l4d2dlr:latest
     restart: always
     environment:
-      SV_HOSTNAME: "[DLR] Test Server"
       RCON_PASSWORD: "changeme"
       DEFAULT_MAP: "c2m1_highway"
       MAP: "c2m1_highway"
       SV_PORT: 27020
-      HOSTNAME: "[DLR] Test Server!"
+      HOSTNAME: "[DLR] Changed name!"
       REGION: 255
       INTERNAL_IP: "0.0.0.0"
       PUBLIC_IP: "88.113.169.215"
