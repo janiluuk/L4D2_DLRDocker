@@ -28,10 +28,14 @@ EOF
     fi
 fi
 
+rm -rf ${INSTALL_DIR}/left4dead2/addons/*
+cp -R /data/addons/* ${INSTALL_DIR}/left4dead2/addons/
+rm -rf ${INSTALL_DIR}/left4dead2/cfg/sourcemod
+cp -R /data/cfg/sourcemod ${INSTALL_DIR}/left4dead2/cfg/
 
 # Start Game
 if [ $# -eq 0 ]; then
-    ./srcds_run -port "${PORT}" +map "${MAP}" -maxplayers 8 +hostname "{$HOSTNAME}" +hostip "${PUBLIC_IP}" -ip "${INTERNAL_IP}" +hostport "${PORT}" +clientport 27007 -nohltv +exec server.cfg -console -debug
+    ./srcds_run -port "${PORT}" +map "${MAP}" -maxplayers 8 +hostname "{$HOSTNAME}" +hostip "${PUBLIC_IP}" -ip "${INTERNAL_IP}" +hostport "${PORT}" +clientport 27007 -nohltv +exec server.cfg -console
 
 else
     ./srcds_run "$@"
