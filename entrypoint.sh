@@ -13,6 +13,12 @@ else
   exit 100
 fi
 CONFIG_FILE="${CONFIG_DIR}/server.cfg"
+rm -f ${CONFIG_DIR}/server.cfg
+rm -f ${CONFIG_DIR}/server.cfg.tpl
+
+cp -R /data/cfg/server.cfg.tpl ${INSTALL_DIR}/left4dead2/cfg/server.cfg.tpl
+
+
 if [ -f "${CONFIG_FILE}" ]; then
     echo "server.cfg already exists"
 else
