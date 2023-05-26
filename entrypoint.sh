@@ -17,8 +17,9 @@ rm -f ${CONFIG_DIR}/server.cfg
 rm -f ${CONFIG_DIR}/server.cfg.tpl
 
 cp -R /data/cfg/server.cfg.tpl ${INSTALL_DIR}/left4dead2/cfg/server.cfg.tpl
-
-
+cp -R /data/cfg/server.cfg.tpl ${INSTALL_DIR}/left4dead2/cfg/server.cfg.tpl
+cat /data/motd.txt > ${INSTALL_DIR}/left4dead2/motd.txt
+cat /data/host.txt > ${INSTALL_DIR}/left4dead2/host.txt
 if [ -f "${CONFIG_FILE}" ]; then
     echo "server.cfg already exists"
 else
@@ -27,7 +28,7 @@ else
 hostname "${HOSTNAME}"
 sv_region ${REGION}
 sv_logecho 1
-motd_enabled 0
+motd_enabled 1
 EOF
     if [ -n "${RCON_PASSWORD}" ]; then
         echo "rcon_password \"${RCON_PASSWORD}\"" >> "${CONFIG_FILE}"
@@ -41,7 +42,7 @@ cp -R /data/cfg/sourcemod ${INSTALL_DIR}/left4dead2/cfg/
 
 # Start Game
 if [ $# -eq 0 ]; then
-    ./srcds_run -port "${PORT}" +map "${MAP}" -maxplayers 8 +hostname "{$HOSTNAME}" +hostip "${PUBLIC_IP}" -ip "${INTERNAL_IP}" +hostport "${PORT}" +clientport 27007 -nohltv +exec server.cfg -console
+    ./srcds_run -port "${PORT}" +map "${MAP}" -maxplayers 8 +hostname "${HOSTNAME}" +hostip "${PUBLIC_IP}" -ip "${INTERNAL_IP}" +hostport "${PORT}" +clientport 27007 -nohltv +exec server.cfg -console
 
 else
     ./srcds_run "$@"
